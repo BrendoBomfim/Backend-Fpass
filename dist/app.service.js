@@ -10,7 +10,7 @@ exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
 let AppService = exports.AppService = class AppService {
     getHello() {
-        return 'Hello World!';
+        return 'Este é um projeto de API REST que permite pesquisar, favoritar e listar heróis da Marvel. Para mais informações você pode acessar http://localhost:3000/api';
     }
 };
 exports.AppService = AppService = __decorate([
