@@ -40,7 +40,10 @@ Essa arquitetura permite que cada camada seja testada separadamente, pois as dep
 
 
 ## Executando o Projeto
-Para executar o projeto, siga os passos abaixo:
+
+O projeto está disponível no [Heroku](https://marvel-heroes-api-6ed174ee6b98.herokuapp.com/api)
+
+Para executar o projeto localmente, siga os passos abaixo:
 
 1. Certifique-se de ter o Node.js, Yarn e o Docker instalados em sua máquina. Você pode baixá-los em [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) e [Docker](https://www.docker.com/products/docker-desktop/) respectivamente.
 
