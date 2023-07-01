@@ -1,5 +1,4 @@
 const redisStore = require("cache-manager-redis-store");
-import { HttpModule } from '@nestjs/axios';
 import { Module } from '@nestjs/common';
 import { CacheModule } from '@nestjs/cache-manager';
 import { AppController } from './app.controller';

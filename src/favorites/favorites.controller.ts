@@ -8,8 +8,8 @@ export class FavoritesController {
   constructor(private readonly favoritesService: FavoritesService) {}
 
   @ApiOperation({ summary: 'Adiciona um herói nos favoritos' })
-  @Post(':id')
-  async create(@Param('id') id: number, @Res() res) {
+  @Post(':marvelId')
+  async create(@Param('marvelId') id: number, @Res() res) {
     const favoriteExists = await this.favoritesService.findOne(id);
     if (favoriteExists) {
       return res.status(400).json({ message: 'Este herói já foi adicionado aos favoritos.' });
@@ -19,6 +19,7 @@ export class FavoritesController {
     return res.status(201).json({ message: 'Favorito adicionado com sucesso.' });
   }
 
+  
   @ApiOperation({ summary: 'Exibe a lista de favoritos' })
   @Get()
   async findAll(@Res() res) {
